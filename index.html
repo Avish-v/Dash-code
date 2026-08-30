@@ -1,79 +1,148 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashcode</title>
-    <link rel="icon" href="icon.jpeg" type="image/jpeg">
+    <title>DashCode — Freelance Web Developer</title>
+    <meta name="description" content="DashCode is a freelance studio building websites, presentations, resumes, spreadsheets and project work for students and small businesses.">
+    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
 
-    <header>
-        <h1>
-            <img src="icon.jpeg" alt="Dashcode icon" class="title-icon">
-            DASHCODE
-        </h1>
-    </header>
-    <main>
-        <section class="intro-card reveal">
-            <div class="intro-text">
-                <p class="name">Avish</p>
-                <p class="description">I am a first-year student of AI &amp; DS. I design and develop websites, and I enjoy building polished, user-friendly web experiences.</p>
-            </div>
-            <div class="intro-image">
-                <img src="profile.jpg" alt="My photo" id="profileImg">
-            </div>
-        </section>
+    <nav class="nav" id="nav">
+        <a href="index.html" class="brand">
+            <img src="assets/logo-mark.svg" alt="DashCode logo" class="brand-mark">
+            <span class="brand-text">DASH<span>CODE</span></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section class="info-grid">
-            <div class="info-card skills-card reveal">
-                <h2>My Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>UI/UX Design</li>
-                </ul>
+    <section class="hero" id="home">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">// freelance web developer</p>
+                <h1>We build the web <span class="accent">presence</span> your work deserves.</h1>
+                <p class="hero-sub">DashCode is a freelance studio run by Avish, a first-year AI &amp; Data Science student who designs and ships polished, user-friendly websites — plus the presentations, resumes and spreadsheets that go with them.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">View services</a>
+                    <a href="#contact" class="btn btn-outline">Get in touch</a>
+                </div>
             </div>
-            <div class="info-card services-card reveal">
-                <h2>Services</h2>
-                <ul>
-                    <li>Web design (UI &amp; UX)</li>
-                    <li>Web development</li>
-                    <li>Logo editing</li>
-                    <li>QR code generation</li>
-                </ul>
+            <div class="hero-panel reveal">
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span class="dot dot-red"></span><span class="dot dot-white"></span><span class="dot dot-outline"></span>
+                        <span class="terminal-title">dashcode — zsh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <img src="assets/logo-mark.svg" alt="DashCode emblem" class="terminal-logo">
+                        <p class="terminal-line"><span class="prompt">avish@dashcode</span><span class="colon">:~$</span> <span id="typedText"></span><span class="cursor">▌</span></p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="info-grid">
-            <div class="info-card portfolio-card reveal">
-                <h2>Project Portfolio</h2>
-                <ul>
-                    <li>Jewellery website design</li>
-                    <li>Personal portfolio website</li>
-                    <li>E-commerce website design</li>
-                </ul>
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>JAVA</span><span>PYTHON</span><span>SQL</span><span>UI/UX DESIGN</span>
+            <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>JAVA</span><span>PYTHON</span><span>SQL</span><span>UI/UX DESIGN</span>
+        </div>
+    </div>
+
+    <section class="section" id="services">
+        <p class="eyebrow center">$ services --list</p>
+        <h2 class="section-title">What I can build for you</h2>
+        <div class="services-grid">
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>PPT Presentations</h3>
+                <p>Clean, well-structured slide decks for class projects, pitches and reports that present your ideas clearly.</p>
             </div>
-            <div class="info-card contact-card reveal">
-                <h2>Contact</h2>
-                <ul>
-                    <li>Phone: <a href="tel:7826054134">7826054134</a></li>
-                    <li>Email: <a href="mailto:dashcode07@gmail.com">dashcode07@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/avish-v-30b599417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/dash_.code_?igsh=MW16OGE1c2kxMGt5ZA==" target="_blank" rel="noopener">Instagram</a></li>
-                </ul>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/><path d="M9 13h6M9 17h6"/></svg>
+                </div>
+                <h3>Resume &amp; CV Design</h3>
+                <p>ATS-friendly, well-formatted resumes that highlight your strengths and get you noticed by recruiters.</p>
             </div>
-        </section>
-    </main>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <h3>Excel &amp; Spreadsheets</h3>
+                <p>Trackers, dashboards and data sheets built with formulas and formatting that actually make sense.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Project &amp; Assignment Work</h3>
+                <p>Hands-on help with academic and technical project work, from planning through to a finished submission.</p>
+            </div>
+        </div>
+        <p class="services-note reveal">Looking for a website instead? Explore our <a href="web-design.html">dedicated web design &amp; development services →</a></p>
+    </section>
+
+    <section class="section" id="portfolio">
+        <p class="eyebrow center">$ open portfolio</p>
+        <h2 class="section-title">Recent work</h2>
+        <div class="portfolio-grid">
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                </div>
+                <h3>Jewellery Website</h3>
+                <p>A elegant storefront design built to showcase a jewellery brand's collection online.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16"/></svg>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>A polished personal portfolio website for showcasing skills, projects and contact details.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <h3>E-commerce Website</h3>
+                <p>A full storefront design concept covering product listings, cart flow and checkout pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="contact-section reveal">
+            <p class="eyebrow center contact-eyebrow">$ contact --send</p>
+            <h2 class="section-title">Let's work together</h2>
+            <ul class="contact-list">
+                <li><a href="tel:7826054134">📞 7826054134</a></li>
+                <li><a href="mailto:dashcode07@gmail.com">✉️ dashcode07@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/avish-v-30b599417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/dash_.code_?igsh=MW16OGE1c2kxMGt5ZA==" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+            <p class="contact-note">Need a website built or redesigned? See the <a href="web-design.html">web design &amp; development services →</a></p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Dashcode. All rights reserved.</p>
+        <p>&copy; 2026 <a href="index.html">DashCode</a>. All rights reserved.</p>
     </footer>
 </body>
 </html>
