@@ -1,78 +1,58 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design &amp; Development — DashCode</title>
-    <meta name="description" content="DashCode's web design and development services: UI/UX design, web development, logo editing and QR code generation.">
-    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#31090D">
+    <title>Website Design &amp; Development | DASH CODE</title>
+    <meta name="description" content="Website design and development by DASH CODE: modern, responsive business and portfolio websites built for clear user experiences.">
+    <link rel="canonical" href="https://dashcode.co.in/web-design.html">
+    <link rel="icon" href="assets/dash-code-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/dash-code-logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DASH CODE">
+    <meta property="og:title" content="Website Design &amp; Development | DASH CODE">
+    <meta property="og:description" content="Modern, responsive websites built with purpose by DASH CODE.">
+    <meta property="og:url" content="https://dashcode.co.in/web-design.html">
+    <meta property="og:image" content="https://dashcode.co.in/assets/dash-code-logo.png">
+    <meta property="og:image:alt" content="DASH CODE logo with the BUILD. DESIGN. LAUNCH. tagline">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Website Design &amp; Development | DASH CODE">
+    <meta name="twitter:description" content="Modern, responsive websites built with purpose by DASH CODE.">
+    <meta name="twitter:image" content="https://dashcode.co.in/assets/dash-code-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="progress-bar" id="progressBar"></div>
-
-    <nav class="nav" id="nav">
-        <a href="index.html" class="brand">
-            <img src="assets/logo-mark.svg" alt="DashCode logo" class="brand-mark">
-            <span class="brand-text">DASH<span>CODE</span></span>
-        </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="web-design.html">Web Design</a></li>
-            <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="page-hero reveal">
-        <p class="eyebrow center">// specialised services</p>
-        <h1>Web Design &amp; Development</h1>
-        <p>Everything DashCode originally started with — building and dressing up websites from the ground up, plus the small extras that go with a brand's online presence.</p>
-    </section>
-
-    <section class="section">
-        <div class="services-grid web-services-grid">
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4Z"/><path d="M4 9h16M9 9v11"/></svg>
-                </div>
-                <h3>Web Design (UI &amp; UX)</h3>
-                <p>Clean, intuitive layouts designed around how people actually use a website.</p>
+    <header class="site-header">
+        <nav class="nav" id="nav" aria-label="Primary navigation">
+            <a href="index.html#home" class="brand" aria-label="DASH CODE home"><img src="assets/dash-code-logo.png" alt="DASH CODE logo" class="brand-logo"><span class="brand-copy"><strong>DASH CODE</strong><small>BUILD. DESIGN. LAUNCH.</small></span></a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#portfolio">Projects</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="index.html#contact" class="nav-cta">Get Started <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="service-page-hero">
+            <div class="service-page-inner reveal"><p class="eyebrow"><span aria-hidden="true"></span> Website design &amp; development</p><h1>More than a page. A place for your work to <em>land.</em></h1><p>DASH CODE creates responsive, user-friendly websites that bring your work, service or idea into focus. Each build starts with clarity and ends with an experience ready to share.</p><a class="btn btn-primary" href="index.html#contact">Start a website project <span aria-hidden="true">↗</span></a></div>
+        </section>
+        <section class="section service-detail-section">
+            <div class="section-heading reveal"><p class="eyebrow"><span aria-hidden="true"></span> What’s included</p><div><h2>A focused digital foundation.</h2><p>The exact scope is shaped by the project. These are the core parts of a considered website build.</p></div></div>
+            <div class="service-detail-grid">
+                <article class="detail-card reveal"><span>01</span><h3>Strategy &amp; structure</h3><p>Clarifying the pages, content and user journey your site needs before visual work begins.</p></article>
+                <article class="detail-card reveal"><span>02</span><h3>UI/UX design</h3><p>Building a visual direction with clear hierarchy, useful interactions and a strong first impression.</p></article>
+                <article class="detail-card reveal"><span>03</span><h3>Responsive development</h3><p>Developing a smooth website experience that adapts thoughtfully across phones, tablets and desktops.</p></article>
+                <article class="detail-card reveal"><span>04</span><h3>Launch-ready details</h3><p>Preparing the important finishing touches: accessible structure, image alt text and foundational SEO metadata.</p></article>
             </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
-                </div>
-                <h3>Web Development</h3>
-                <p>Responsive, fast-loading websites built from scratch with HTML, CSS and JavaScript.</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3Z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5Z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-                </div>
-                <h3>Logo Editing</h3>
-                <p>Touch-ups, resizing and refinements to get an existing logo ready for every use case.</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM19 14h2v2h-2zM14 19h2v2h-2zM19 19h2v2h-2z"/></svg>
-                </div>
-                <h3>QR Code Generation</h3>
-                <p>Custom QR codes for menus, business cards, payments and quick-access links.</p>
-            </div>
-        </div>
-        <div class="page-cta reveal">
-            <a href="index.html#contact" class="btn btn-primary">Start a project</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 <a href="index.html">DashCode</a>. All rights reserved.</p>
-    </footer>
+        </section>
+        <section class="service-page-cta"><div class="reveal"><p class="eyebrow eyebrow-light"><span aria-hidden="true"></span> Have a project in mind?</p><h2>Let’s give it a better place online.</h2><a class="btn btn-light" href="index.html#contact">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><div class="footer-top"><a href="index.html#home" class="footer-brand"><img src="assets/dash-code-logo.png" alt="DASH CODE logo"><span>DASH CODE<small>BUILD. DESIGN. LAUNCH.</small></span></a><p>Thoughtful websites and practical digital solutions, made in India.</p></div><div class="footer-bottom"><p>© 2026 DASH CODE. All rights reserved.</p><div class="socials"><a href="https://www.instagram.com/dash_.code_?igsh=MW16OGE1c2kxMGt5ZA==" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/avish-v-30b599417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a><span title="Official account link not yet supplied">Pinterest</span><span title="Official account link not yet supplied">GitHub</span></div></div></footer>
 </body>
 </html>
